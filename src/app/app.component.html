@@ -1,4 +1,28 @@
 <div style="text-align: center">
-  <h1>yudym-castrogunilibre.edu.co</h1>
+  <h1>Yudy Melisa Castro Garzon</h1>
+  <h2>yudym-castrog@unilibre.edu.co</h2>
+  <table>
+  <tr>
+    <th>Nombre Planeta</th>
+    <th>Distancia</th>
+    <th>Lunas</th>
+    <th>Masa</th>
+  </tr>
+  <ng-container>
+    <td>
+        <tr *ngFor="let planet of planetas">{{planet.item}}</tr>
+    </td>
+    <td>
+    <tr *ngFor="let dista of distancia">{{dista.dist}}</tr>
+    </td>
+    <td>
+        <tr *ngFor="let lunita of lunas">{{lunita.lun}}</tr>
+    </td>
+    <td>
+        <tr *ngFor="let masita of masa">{{masita.mas}}</tr>
+    </td>
+  </ng-container>
+
+</table>
 </div>
 
